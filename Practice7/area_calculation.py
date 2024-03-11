@@ -7,7 +7,13 @@ print(Text)
 
 X=input("Choose your any one preferred area:")
 X=int(X)
-if X==1:
+while X >= 5:
+ print("There are no area exist in this number")
+ X =int( input("Choose your any one preferred area:"))
+ continue
+while X<=4:
+
+ if X==1:
     base = input("Enter base in meter:")
     base = float(base)
     height = input("Enter height in meter:")
@@ -19,7 +25,7 @@ if X==1:
         print("The area number is odd number")
     else:
         print("The area number is even number")
-elif X==2:
+ elif X==2:
     base = input("Enter base in meter:")
     base = float(base)
     height = input("Enter height in meter:")
@@ -31,7 +37,7 @@ elif X==2:
         print("The area number is odd number")
     else:
         print("The area number is even number")
-elif X == 3:
+ elif X == 3:
         base = input("Enter base in meter:")
         base = float(base)
         area3 = base**2
@@ -41,7 +47,7 @@ elif X == 3:
             print("The area number is odd number")
         else:
             print("The area number is even number")
-elif X == 4:
+ elif X == 4:
         r = input("Enter radius in meter:")
         r = float(r)
         area4 = 3.1416*(r**2)
@@ -52,5 +58,7 @@ elif X == 4:
             print("The area number is odd number")
         else:
             print("The area number is even number")
-else:
-    print("There are no area exist in this number")
+ break
+#else:
+    #print("There are no area exist in this number")
+
