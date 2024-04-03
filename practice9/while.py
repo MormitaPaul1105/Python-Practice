@@ -21,8 +21,8 @@ while X==1:
    print ("The range is:")
    so=0
    for i in range (X,y+1,2):
-       print(i)
-       so=so+i
+    print(i)
+    so=so+i
 
    print(f"The sum of numbers from 1 to {y} is: {so}")
    break
